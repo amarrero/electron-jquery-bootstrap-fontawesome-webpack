@@ -1,0 +1,124 @@
+{
+  "extends": ["prettier"],
+  "plugins": ["import"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2021
+  },
+  "rules": {
+    "array-bracket-newline": ["error", "consistent"],
+    "array-bracket-spacing": "error",
+    "array-element-newline": "off",
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "block-spacing": ["error", "always"],
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "computed-property-spacing": "error",
+    "dot-location": ["error", "property"],
+    "eol-last": "error",
+    "func-call-spacing": "error",
+    "function-call-argument-newline": "off",
+    "function-paren-newline": ["error", "consistent"],
+    "generator-star-spacing": "error",
+    "implicit-arrow-linebreak": "error",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "CallExpression": { "arguments": 1 },
+        "offsetTernaryExpressions": true
+      }
+    ],
+    "jsx-quotes": "error",
+    "key-spacing": "error",
+    "keyword-spacing": "error",
+    "line-comment-position": "off",
+    "linebreak-style": "error",
+    "lines-around-comment": "off",
+    "lines-between-class-members": ["error", "always"],
+    "max-len": "off",
+    "max-statements-per-line": "error",
+    "multiline-ternary": "off",
+    "new-parens": "error",
+    "newline-per-chained-call": "error",
+    "no-extra-parens": ["error", "all", { "ignoreJSX": "all", "nestedBinaryExpressions": false }],
+    "no-mixed-spaces-and-tabs": "error",
+    "no-multi-spaces": "error",
+    "no-trailing-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "nonblock-statement-body-position": "error",
+    "object-curly-newline": "error",
+    "object-curly-spacing": ["error", "always"],
+    "object-property-newline": ["error", {"allowAllPropertiesOnSameLine": true}],
+    "operator-linebreak": "error",
+    "padded-blocks": "off",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "function" },
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "quotes": "error",
+    "rest-spread-spacing": "error",
+    "semi": "error",
+    "semi-spacing": "error",
+    "semi-style": "error",
+    "space-before-blocks": ["error", "always"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "space-in-parens": "error",
+    "space-infix-ops": "error",
+    "space-unary-ops": "error",
+    "switch-colon-spacing": "error",
+    "template-curly-spacing": "error",
+    "template-tag-spacing": "error",
+    "unicode-bom": "error",
+    "wrap-iife": "error",
+    "wrap-regex": "error",
+    "yield-star-spacing": "error",
+    "no-irregular-whitespace": "error",
+    "no-regex-spaces": "error",
+    "no-spaced-func": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": ["@mui/*/*/*"],
+        "paths": [
+          {
+            "name": "@mui/material",
+            "message": "Use import Component from '@mui/material/Component' instead of import { Component } from '@mui/material'"
+          }
+        ]
+      }
+    ],
+    "no-unused-vars": "off"
+  }
+}

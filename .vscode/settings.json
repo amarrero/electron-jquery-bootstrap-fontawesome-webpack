@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+  },
+  "eslint.validate": ["javascript"],
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/config.json"
+      ],
+      "url": "/src/config-schema.json"
+    }
+  ]
+}
